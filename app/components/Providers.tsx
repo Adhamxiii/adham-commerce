@@ -10,8 +10,8 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
       cartMode="client-only"
       stripe={process.env.NEXT_PUBLIC_STRIP_KEY as string}
       currency="USD"
-      successUrl={`${window.location.origin}/stripe/success`}
-      cancelUrl={`${window.location.origin}/stripe/error`}
+      successUrl={`https://adham-commerce.vercel.app/stripe/success`}
+      cancelUrl={`https://adham-commerce.vercel.app/stripe/error`}
       billingAddressCollection={false}
       shouldPersist={true}
       language="en-US"
